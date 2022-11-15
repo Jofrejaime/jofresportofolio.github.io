@@ -1,0 +1,149 @@
+.formacao {
+  background: #141414;
+  color: #ffffff;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #ffffff;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.faculdade {
+  flex: 1;
+  background: #000000;
+  padding: 1.25rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: .625rem;
+}
+
+.faculdade-curso {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 2.25rem;
+  position: relative;
+  flex: 1;
+}
+
+.faculdade-curso::before {
+  content: '';
+  display: block;
+  width: .25rem;
+  height: 1.25rem;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -1.50rem;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.cursos {
+  margin-bottom: 3.75rem;
+}
+
+.formacao-extra h3 {
+  font-size: .875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url(../img/cursos.svg) no-repeat center center;
+  position: absolute;
+  left: -2.25rem;
+  top: -.25rem;
+}
+
+.cursos h3::before {
+  background: url(../img/cursos.svg) no-repeat center center;
+}
+
+.idiomas h3::before {
+  background: url(../img/idiomas.svg) no-repeat center center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao-container {
+  position: relative;
+}
+
+.formacao-container::after {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 180px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -6rem;
+  left: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 3.75rem 1.25rem;
+    gap: 2.50rem;
+  }
+
+  .formacao .subtitulo {
+    color: #ffffff;
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: .625rem;
+  }
+}
